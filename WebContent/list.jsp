@@ -43,15 +43,11 @@
 			</tr>
 		</table>
 		<br>
-		http://localhost:8000/phonebook2/delete.jsp?id=2
 		
 	<%} %>
 	<!-- 반복문 끝 -->
 	
-	<a href="./writeForm.jsp">전화번호 등록폼  ./</a> <br>
-	<a href="/writeForm.jsp">전화번호 등록폼 /</a> <br>
-	<a href="writeForm.jsp">전화번호 등록폼 </a>
-	
+	<a href="./writeForm.jsp">전화번호 등록폼</a> <br>
 	<br><br><br><br><br><br><br>
 </body>
 </html>

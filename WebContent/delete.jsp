@@ -15,6 +15,6 @@
 	System.out.println(count);
 	
 	//리스트 보여주기 -->리스트로 리다이렉트
-	//response.sendRedirect("./list.jsp");
+	response.sendRedirect("./list.jsp");
 	
 %>

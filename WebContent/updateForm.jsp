@@ -34,8 +34,8 @@
 		이름(name): <input type="text" name="name" value="<%=personVo.getName()%>"><br>
 		핸드폰(hp): <input type="text" name="hp" value="<%=personVo.getHp()%>"><br>
 		회사(company): <input type="text" name="company" value="<%=personVo.getCompany()%>"><br>
-		id(personId): <input type="text" name="id" value="<%=personVo.getPerson_id()%>"><br>
-		<button type="submit">등록</button>
+		hidden으로 처리 <input type="text" name="id" value="<%=personVo.getPerson_id()%>"><br>
+		<button type="submit">수정</button>
 	</form>
 	
 	<br>

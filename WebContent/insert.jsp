@@ -23,13 +23,12 @@
 	
 	//Dao를 통해서 데이터 저장
 	PersonDao personDao = new PersonDao();
-	//int count = personDao.personInsert(personVo);
+	int count = personDao.personInsert(personVo);
 	//System.out.println(count);
 	
 	////////////////////////////////////////////////////////////////
 	//리스트 뿌리기 (http://localhost:8000/phonebook2/list.jsp)  --> 리다이렉트
-	
-	//response.sendRedirect("./list.jsp");
+	response.sendRedirect("./list.jsp");
 	
 %>
 
