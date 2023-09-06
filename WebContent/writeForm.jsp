@@ -12,12 +12,15 @@
 	<h2>등록폼</h2>
 	
 	<p>정보을 등록하는 폼입니다. 정보를 등록하고 등록 버튼을 누르세요</p>
+	./insert.jsp?name=서장훈&hp=010-1111-111&company=02-2222-2222 
 	
-	이름(name): <input type="text"><br>
-	핸드폰(hp): <input type="text"><br>
-	회사(company): <input type="text"><br>
-	
-	<button>등록</button>
+	<form action="./insert.jsp" method="get">
+		이름(name): <input type="text" name="name" value=""><br>
+		핸드폰(hp): <input type="text" name="hp" value=""><br>
+		회사(company): <input type="text" name="company" value=""><br>
+		
+		<button type="submit">등록</button>
+	</form>
 	
 	<br>
 	<br>

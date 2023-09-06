@@ -37,12 +37,21 @@
 	   		<tr>
 				<td>회사(company)</td><td><%=personList.get(i).getCompany()%></td>
 			</tr>
+			<tr>
+				<td><a href="./updateForm.jsp?id=<%=personList.get(i).getPerson_id()%>">[수정]</a></td>
+				<td><a href="./delete.jsp?id=<%=personList.get(i).getPerson_id()%>">[삭제]</a></td>
+			</tr>
 		</table>
 		<br>
+		http://localhost:8000/phonebook2/delete.jsp?id=2
+		
 	<%} %>
 	<!-- 반복문 끝 -->
 	
-	<a href="">전화번호 등록폼</a>
-
+	<a href="./writeForm.jsp">전화번호 등록폼  ./</a> <br>
+	<a href="/writeForm.jsp">전화번호 등록폼 /</a> <br>
+	<a href="writeForm.jsp">전화번호 등록폼 </a>
+	
+	<br><br><br><br><br><br><br>
 </body>
 </html>

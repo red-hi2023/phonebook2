@@ -282,4 +282,53 @@ public class PersonDao {
 		return personList;
 
 	}
+	
+	
+	//1명 데이터 가져오기
+	public PersonVo personSelectOne(int personId) {
+
+		PersonVo personVo = null;	
+		
+		this.getConnect();
+
+		try {
+			// 3. SQL문 준비 / 바인딩 / 실행
+			// SQL문 준비
+			String query = "";
+			query += " select  person_id, ";
+			query += "         name, ";
+			query += "         hp, ";
+			query += "         company ";
+			query += " from person ";
+			query += " where person_id = ? ";
+			
+			pstmt = conn.prepareStatement(query);
+
+			// 바인딩
+			pstmt.setInt(1, personId);
+			
+			// 실행
+			rs = pstmt.executeQuery();
+
+			// 4.결과처리
+			rs.next();
+			personId = rs.getInt(1);
+			String name = rs.getString(2);
+			String hp = rs.getString(3);
+			String company = rs.getString(4);
+			
+			personVo = new PersonVo(personId, name, hp, company);
+			
+		} catch (SQLException e) {
+			System.out.println("error:" + e);
+		}
+
+		this.close();
+
+		return personVo;
+
+	}
+	
+	
+	
 }
